@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mustafa Doğukan Kıymet - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .resume-container {
+            width: 850px;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        .resume {
+            display: grid;
+            grid-template-columns: 340px 1fr;
+            min-height: 100vh;
+        }
+
+        .left-column {
+            background: #2c3e50;
+            color: white;
+            padding: 40px 30px;
+        }
+
+        .right-column {
+            padding: 40px 35px;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 300;
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+            line-height: 1.2;
+        }
+
+        .subtitle {
+            font-size: 13px;
+            color: #ecf0f1;
+            margin-bottom: 40px;
+            line-height: 1.5;
+        }
+
+        .section-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #34495e;
+            letter-spacing: 1px;
+        }
+
+        .right-column .section-title {
+            border-bottom-color: #3498db;
+            color: #2c3e50;
+        }
+
+        .subsection-title {
+            font-size: 15px;
+            font-weight: 600;
+            margin-top: 15px;
+            margin-bottom: 12px;
+            color: #ecf0f1;
+        }
+
+        .right-column .subsection-title {
+            color: #2c3e50;
+        }
+
+        .subsection-content {
+            font-size: 13px;
+            line-height: 1.6;
+            color: #ecf0f1;
+        }
+
+        .right-column .subsection-content {
+            color: #555;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            font-size: 12px;
+            line-height: 1.5;
+        }
+
+        .contact-icon {
+            width: 30px;
+            flex-shrink: 0;
+        }
+
+        .skill-item {
+            margin-bottom: 15px;
+        }
+
+        .skill-name {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .skill-dots {
+            display: flex;
+            gap: 4px;
+        }
+
+        .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #34495e;
+        }
+
+        .dot.filled {
+            background: #3498db;
+        }
+
+        .language-item {
+            margin-bottom: 15px;
+        }
+
+        .language-name {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .right-section {
+            margin-bottom: 30px;
+        }
+
+        .summary-text {
+            font-size: 13px;
+            line-height: 1.7;
+            color: #34495e;
+        }
+
+        .education-item {
+            margin-bottom: 15px;
+        }
+
+        .degree {
+            font-weight: 600;
+            font-size: 14px;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+
+        .institution {
+            font-size: 13px;
+            color: #555;
+            margin-bottom: 8px;
+        }
+
+        .description {
+            font-size: 12px;
+            line-height: 1.6;
+            color: #666;
+        }
+
+        .achievement-item {
+            font-size: 12px;
+            margin-bottom: 8px;
+            line-height: 1.5;
+            color: #555;
+        }
+
+        .achievement-item a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        .achievement-item a:hover {
+            text-decoration: underline;
+        }
+
+        .hobby-item {
+            font-size: 13px;
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        .project-title {
+            font-weight: 600;
+            font-size: 15px;
+            color: #2c3e50;
+            margin-bottom: 8px;
+        }
+
+        .project-subtitle {
+            font-style: italic;
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .project-description {
+            margin-bottom: 8px;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+
+        li {
+            font-size: 12px;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 5px;
+        }
+
+        .reference-text {
+            font-size: 13px;
+            color: #ecf0f1;
+            font-style: italic;
+        }
+
+        .social-link {
+            font-size: 12px;
+            color: #ecf0f1;
+            margin-bottom: 12px;
+            line-height: 1.5;
+        }
+
+        .social-link a {
+            color: #3498db;
+            text-decoration: none;
+            word-break: break-all;
+        }
+
+        .social-link a:hover {
+            text-decoration: underline;
+        }
+
+        @media print {
+            body {
+                padding: 0;
+                background: white;
+            }
+            .resume-container {
+                box-shadow: none;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <div class="resume">
+            <div class="left-column">
+                <h1>MUSTAFA<br>DOĞUKAN<br>KIYMET</h1>
+                <div class="subtitle">Game Developer, AI Engineering, Machine Learning</div>
+
+                <div style="margin-bottom: 35px;">
+                    <div class="section-title">SUMMARY</div>
+                    <div class="subsection-title">Social Skills</div>
+                    <div class="subsection-content">
+                        <!-- Add your social skills content here -->
+                    </div>
+                </div>
+
+                <div style="margin-bottom: 35px;">
+                    <div class="section-title">SKILLS</div>
+                    <div class="skill-item">
+                        <div class="skill-name">Unity</div>
+                        <div class="skill-dots">
+                            <div class="dot filled"></div>
+                            <div class="dot filled"></div>
+                            <div class="dot filled"></div>
+                            <div class="dot"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">C#</div>
+                        <div class="skill-dots">
+                            <div class="dot filled"></div>
+                            <div class="dot filled"></div>
+                            <div class="dot filled"></div>
+                            <div class="dot"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">Java</div>
+                        <div class="skill-dots">
+                            <div class="dot filled"></div>
+                            <div class="dot filled"></div>
+                            <div class="dot filled"></div>
+                            <div class="dot"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">Visual Studio</div>
+                        <div class="skill-dots">
+                            <div class="dot filled"></div>
+                            <div class="dot filled"></div>
+                            <div class="dot filled"></div>
+                            <div class="dot"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">Gameplay Programming</div>
+                        <div class="skill-dots">
+                            <div class="dot filled"></div>
+                            <div class="dot filled"></div>
+                            <div class="dot filled"></div>
+                            <div class="dot"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">Python</div>
+                        <div class="skill-dots">
+                            <div class="dot filled"></div>
+                            <div class="dot filled"></div>
+                            <div class="dot filled"></div>
+                            <div class="dot"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">C++</div>
+                        <div class="skill-dots">
+                            <div class="dot filled"></div>
+                            <div class="dot filled"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">SQL</div>
+                        <div class="skill-dots">
+                            <div class="dot filled"></div>
+                            <div class="dot filled"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">TensorFlow</div>
+                        <div class="skill-dots">
+                            <div class="dot filled"></div>
+                            <div class="dot filled"></div>
+                            <div class="dot filled"></div>
+                            <div class="dot"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">PyTorch</div>
+                        <div class="skill-dots">
+                            <div class="dot filled"></div>
+                            <div class="dot filled"></div>
+                            <div class="dot filled"></div>
+                            <div class="dot"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">NumPy</div>
+                        <div class="skill-dots">
+                            <div class="dot filled"></div>
+                            <div class="dot filled"></div>
+                            <div class="dot filled"></div>
+                            <div class="dot"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">Pandas</div>
+                        <div class="skill-dots">
+                            <div class="dot filled"></div>
+                            <div class="dot filled"></div>
+                            <div class="dot filled"></div>
+                            <div class="dot"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">Git</div>
+                        <div class="skill-dots">
+                            <div class="dot filled"></div>
+                            <div class="dot filled"></div>
+                            <div class="dot filled"></div>
+                            <div class="dot"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">GitHub</div>
+                        <div class="skill-dots">
+                            <div class="dot filled"></div>
+                            <div class="dot filled"></div>
+                            <div class="dot filled"></div>
+                            <div class="dot"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">Machine Learning Integration in Games</div>
+                        <div class="skill-dots">
+                            <div class="dot filled"></div>
+                            <div class="dot filled"></div>
+                            <div class="dot filled"></div>
+                            <div class="dot"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-bottom: 35px;">
+                    <div class="section-title">LANGUAGES</div>
+                    <div class="language-item">
+                        <div class="language-name">English</div>
+                        <div class="skill-dots">
+                            <div class="dot filled"></div>
+                            <div class="dot filled"></div>
+                            <div class="dot filled"></div>
+                            <div class="dot filled"></div>
+                        </div>
+                    </div>
+                    <div class="language-item">
+                        <div class="language-name">Turkish</div>
+                        <div class="skill-dots">
+                            <div class="dot filled"></div>
+                            <div class="dot filled"></div>
+                            <div class="dot filled"></div>
+                            <div class="dot filled"></div>
+                            <div class="dot filled"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-bottom: 35px;">
+                    <div class="section-title">REFERENCES</div>
+                    <div class="reference-text">Reference available upon request</div>
+                </div>
+
+                <div>
+                    <div class="section-title">SOCIAL LINKS</div>
+                    <div class="social-link">
+                        <strong>Itch.io Profile:</strong><br>
+                        <a href="https://mamkafa9.itch.io/" target="_blank">mamkafa9.itch.io/</a>
+                    </div>
+                    <div class="social-link">
+                        <strong>GitHub Profile:</strong><br>
+                        <a href="https://github.com/icantdo" target="_blank">github.com/icantdo</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-column">
+                <div class="right-section">
+                    <div class="section-title">CONTACT INFORMATION</div>
+                    <div class="contact-item">
+                        <div class="contact-icon">✉</div>
+                        <div>mustafadogankiymet@gmail.com</div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div>+905531552949</div>
+                    </div>
+                </div>
+
+                <div class="right-section">
+                    <div class="section-title">SUMMARY</div>
+                    <p class="summary-text">
+                        I am a second-year Artificial Intelligence Engineering student at Adana Alparslan University of Science and Technology, as well as the founder and current president of the DnD and Board Games Club. I have been working with Unity for the past three years, during which I have developed and published several projects.
+                    </p>
+                </div>
+
+                <div class="right-section">
+                    <div class="section-title">EDUCATION</div>
+                    <div class="education-item">
+                        <div class="degree">Bachelor</div>
+                        <div class="institution">Adana Alparslan Turkes University of Science and T, Adana</div>
+                        <p class="description">
+                            I am currently pursuing my second year in Artificial Intelligence Engineering at Adana Alparslan University of Science and Technology, where I also serve as the founder and president of the DnD and Board Games Club.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="right-section">
+                    <div class="section-title">ACHIEVEMENTS</div>
+                    <div class="achievement-item">
+                        We ranked 744th in the <a href="https://itch.io/jam/gmtk-2024" target="_blank">GMTK Game Jam 2024</a> game jam among over 7,500 games.
+                    </div>
+                    <div class="achievement-item">
+                        We ranked 609th in the <a href="https://itch.io/jam/brackeys-1" target="_blank">Brackeys Game Jam 2025.1</a> among over 2,000 games.
+                    </div>
+                    <div class="achievement-item">
+                        We ranked 6115th in the <a href="https://itch.io/jam/gmtk-2025" target="_blank">GMTK Game Jam 2025</a> among over 9,500 games.
+                    </div>
+                    <div class="achievement-item">
+                        We ranked 65th in the <a href="https://itch.io/jam/brackeys-2" target="_blank">Brackeys Game Jam 2025.2</a> among over 2,000 games.
+                    </div>
+                    <div class="achievement-item">
+                        We ranked 27th in the <a href="https://itch.io/jam/patch-notes-v10" target="_blank">Patch Notes v1.0</a> among over 450 games.
+                    </div>
+                    <div class="achievement-item">
+                        My score in the Titanic - Machine Learning from Disaster competition is 0.4 out of 1.
+                    </div>
+                </div>
+
+                <div class="right-section">
+                    <div class="section-title">HOBBIES AND INTERESTS</div>
+                    <div class="hobby-item">• Playing Games</div>
+                    <div class="hobby-item">• To be Dungeon Master</div>
+                </div>
+
+                <div class="right-section">
+                    <div class="section-title">NINE LIFES NINE DEATHS</div>
+                    <div class="project-subtitle">
+                        Lead Developer & Programmer<br>
+                        (Vampire Survivors-inspired bullet hell roguelite)
+                    </div>
+                    <ul>
+                        <li>Designed and implemented 27 unique weapons, 12 passive abilities, and 9 biomes.</li>
+                        <li>Developed scalable modular weapon and ability systems with Unity C#.</li>
+                        <li>Optimized performance for high-entity counts and procedural enemy spawning.</li>
+                        <li>Led a small collaborative team, managing gameplay balance and progression.</li>
+                    </ul>
+                </div>
+
+                <div class="right-section">
+                    <div class="section-title">BOUNDRIES</div>
+                    <div class="project-subtitle">
+                        Gameplay Programmer<br>
+                        (2D platform puzzle game centered around glitch mechanics)
+                    </div>
+                    <ul>
+                        <li>Designed unique puzzle logic involving reality distortion and glitch-based challenges.</li>
+                        <li>Implemented time and state tracking systems to control glitch interactions.</li>
+                        <li>Collaborated with a small team for level pacing and smooth difficulty curve.</li>
+                    </ul>
+                </div>
+
+                <div class="right-section">
+                    <div class="section-title">ROBBY RACCOON</div>
+                    <div class="project-subtitle">
+                        Gameplay & Systems Programmer<br>
+                        (Fast-paced bullet hell boss game with time rewind mechanics)
+                    </div>
+                    <ul>
+                        <li>Designed and implemented a dynamic time-reversal system allowing players to undo actions.</li>
+                        <li>Focused on tight control feel and readable but challenging boss patterns.</li>
+                        <li>Emphasized mechanic clarity and satisfying player feedback loops.</li>
+                    </ul>
+                </div>
+
+                <div class="right-section">
+                    <div class="section-title">TIMELOOP ARENA</div>
+                    <div class="project-subtitle">Solo project, itch.io</div>
+                    <p class="project-description">- Developed entirely solo (except music).</p>
+                    <p class="project-description">- Features: player movement & health, shooting system, time-rewind mechanic, boss AI, bullet-hell patterns, retro-style shaders.</p>
+                    <p class="project-description">- Tech: Unity (URP), C#, Shader Graph.</p>
+                </div>
+
+                <div class="right-section">
+                    <div class="section-title">WINDOW WALKER</div>
+                    <div class="project-subtitle">Brackeys Game Jam</div>
+                    <p class="project-description">- Role: Gameplay Programmer.</p>
+                    <p class="project-description">- Implemented player movement, moving platforms, laser traps, portal system, interactive switches.</p>
+                    <p class="project-description">- Tech: Unity 2D, C#.</p>
+                </div>
+
+                <div class="right-section">
+                    <div class="section-title">FISHERMAN'S STORM</div>
+                    <p class="project-description">- Role: Gameplay Programmer.</p>
+                    <p class="project-description">- Designed fishing system, probability mechanics (rarity based on distance), fish selling & inventory system.</p>
+                    <p class="project-description">- Tech: Unity 2D, C#.</p>
+                </div>
+
+                <div class="right-section">
+                    <div class="section-title">JACK LUMBER: TIMBER TRIALS</div>
+                    <p class="project-description">- Role: Programmer.</p>
+                    <p class="project-description">- Implemented camera system and parallax background movement.</p>
+                    <p class="project-description">- Tech: Unity 2D, C#</p>
+                </div>
+
+                <div class="right-section">
+                    <div class="section-title">TITANIC - MACHINE LEARNING FROM DISASTER</div>
+                    <p class="description">
+                        While developing a model for this dataset, I knowingly used linear regression and achieved an optimization level of 0.4 at level 1.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
