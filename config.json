@@ -87,6 +87,13 @@
       "technologies": ["Python", "Image Processing"],
       "link": "https://github.com/icantdo/Adversarial-Art-Protection",
       "image": "project8.jpg"
+    },
+    {
+      "title": "Weapon & Passive System - Complete Roguelike Framework",
+      "description": "A production-ready, flexible weapon and passive item system for Unity, perfect for creating Vampire Survivors-like",
+      "technologies": ["C#", "Unity"],
+      "link": "https://mamkafa9.itch.io/weapon-passive-system-complete-roguelike-framework",
+      "image": "project9.jpg"
     }
   ],
 
