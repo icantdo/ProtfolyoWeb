@@ -68,8 +68,70 @@ document.querySelectorAll('.project-card, .timeline-item, .education-card, .skil
     animateOnScroll.observe(el);
 });
 
+// Load projects dynamically from config.json
+async function loadProjects() {
+    try {
+        const response = await fetch('config.json');
+        const config = await response.json();
+        const projectsGrid = document.querySelector('.projects-grid');
+
+        if (!projectsGrid) return;
+
+        // Clear existing projects
+        projectsGrid.innerHTML = '';
+
+        // Create project cards from config
+        config.projects.forEach(project => {
+            const projectCard = document.createElement('div');
+            projectCard.className = 'project-card';
+
+            const technologies = project.technologies.map(tech =>
+                `<span class="tag">${tech}</span>`
+            ).join('');
+
+            projectCard.innerHTML = `
+                <div class="project-image">
+                    <img src="static/images/${project.image}" alt="${project.title}" onerror="this.style.display='none'; this.parentElement.querySelector('.project-placeholder').style.display='flex';">
+                    <div class="project-placeholder" style="display:none;">
+                        <div class="project-placeholder-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="project-placeholder-title">${project.title}</div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>${project.title}</h3>
+                    <p>${project.description}</p>
+                    <div class="project-tags">
+                        ${technologies}
+                    </div>
+                    <a href="${project.link}" target="_blank" class="project-link">
+                        View Project <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            `;
+
+            projectsGrid.appendChild(projectCard);
+        });
+
+        // Re-apply animations to newly created project cards
+        document.querySelectorAll('.project-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'all 0.6s ease-out';
+            animateOnScroll.observe(el);
+        });
+
+    } catch (error) {
+        console.error('Error loading projects:', error);
+    }
+}
+
 // Handle missing project images gracefully
 document.addEventListener('DOMContentLoaded', function() {
+    // Load projects dynamically
+    loadProjects();
+
     const projectImages = document.querySelectorAll('.project-image img');
 
     projectImages.forEach(img => {
