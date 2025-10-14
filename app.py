@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, jsonify
 import json
 
 app = Flask(__name__)
@@ -12,6 +12,11 @@ def load_config():
 def home():
     config = load_config()
     return render_template('index.html', **config)
+
+@app.route('/config.json')
+def get_config():
+    config = load_config()
+    return jsonify(config)
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5000)

@@ -295,6 +295,34 @@ section {
     background: var(--light-bg);
 }
 
+.project-category {
+    margin-bottom: 4rem;
+}
+
+.project-category:last-child {
+    margin-bottom: 0;
+}
+
+.category-title {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: var(--text-light);
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.category-title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 30px;
+    background: var(--gradient);
+    border-radius: 3px;
+}
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -305,11 +333,31 @@ section {
     background: var(--dark-bg);
     border-radius: 12px;
     overflow: hidden;
-    transition: transform 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .project-card:hover {
     transform: translateY(-10px);
+}
+
+/* Current Work cards - Yellow border */
+.project-card-current {
+    box-shadow: 0 0 0 4px #fbbf24 !important;
+    border: 4px solid #fbbf24 !important;
+}
+
+.project-card-current:hover {
+    box-shadow: 0 0 0 4px #fbbf24, 0 8px 30px rgba(251, 191, 36, 0.5) !important;
+}
+
+/* Finished cards - Blue border */
+.project-card-finished {
+    box-shadow: 0 0 0 4px #3b82f6 !important;
+    border: 4px solid #3b82f6 !important;
+}
+
+.project-card-finished:hover {
+    box-shadow: 0 0 0 4px #3b82f6, 0 8px 30px rgba(59, 130, 246, 0.5) !important;
 }
 
 .project-image {
@@ -317,6 +365,31 @@ section {
     background: var(--light-bg);
     position: relative;
     overflow: hidden;
+}
+
+/* Status Badge */
+.status-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    z-index: 10;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.status-current {
+    background: #fbbf24;
+    color: #000;
+}
+
+.status-finished {
+    background: #3b82f6;
+    color: #fff;
 }
 
 .project-image img {

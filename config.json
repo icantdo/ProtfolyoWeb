@@ -37,70 +37,80 @@
       "description": "Lead Developer & Programmer for a Vampire Survivors-inspired bullet hell roguelite. Designed and implemented 27 unique weapons, 12 passive abilities, and 9 biomes. Developed scalable modular weapon and ability systems with Unity C#. Optimized performance for high-entity counts and procedural enemy spawning.",
       "technologies": ["Unity", "C#", "Game Design"],
       "link": "https://mamkafa9.itch.io/nine-lifes-nine-deaths",
-      "image": "project1.png"
+      "image": "project1.png",
+      "status": "finished"
     },
     {
       "title": "Boundries",
       "description": "Gameplay Programmer for a 2D platform puzzle game centered around glitch mechanics. Designed unique puzzle logic involving reality distortion and glitch-based challenges. Implemented time and state tracking systems to control glitch interactions.",
       "technologies": ["Unity", "C#", "Puzzle Design"],
       "link": "https://f1nndegamer.itch.io/boundries",
-      "image": "project2.png"
+      "image": "project2.png",
+      "status": "finished"
     },
     {
       "title": "Robby Raccoon",
       "description": "Gameplay & Systems Programmer for a fast-paced bullet hell boss game with time rewind mechanics. Designed and implemented a dynamic time-reversal system allowing players to undo actions. Focused on tight control feel and readable but challenging boss patterns.",
       "technologies": ["Unity", "C#", "Boss AI"],
       "link": "https://f1nndegamer.itch.io/brackeys-jam-14",
-      "image": "project3.png"
+      "image": "project3.png",
+      "status": "finished"
     },
     {
       "title": "Timeloop Arena",
       "description": "Solo project featuring player movement & health, shooting system, time-rewind mechanic, boss AI, bullet-hell patterns, and retro-style shaders. Developed entirely solo except music.",
       "technologies": ["Unity", "C#", "URP", "Shader Graph"],
       "link": "https://mamkafa9.itch.io/timeloop-arena",
-      "image": "project4.png"
+      "image": "project4.png",
+      "status": "finished"
     },
     {
       "title": "Window Walker",
       "description": "Brackeys Game Jam entry. Implemented player movement, moving platforms, laser traps, portal system, and interactive switches as Gameplay Programmer.",
       "technologies": ["Unity 2D", "C#"],
       "link": "https://f1nndegamer.itch.io/window-walker",
-      "image": "project5.png"
+      "image": "project5.png",
+      "status": "finished"
     },
     {
       "title": "Fisherman's Storm",
       "description": "Designed fishing system with probability mechanics (rarity based on distance), fish selling & inventory system. Role: Gameplay Programmer.",
       "technologies": ["Unity 2D", "C#"],
       "link": "https://ramixang.itch.io/fishermans-storm",
-      "image": "project6.png"
+      "image": "project6.png",
+      "status": "finished"
     },
     {
       "title": "Titanic - Machine Learning from Disaster",
       "description": "Developed a machine learning model using linear regression for the Titanic dataset competition, achieving an optimization level of 0.4.",
       "technologies": ["Python", "Machine Learning", "Linear Regression"],
       "link": "https://www.kaggle.com/competitions/titanic",
-      "image": "project7.png"
+      "image": "project7.png",
+      "status": "finished"
     },
     {
       "title": "Adversarial Art Protection",
       "description": "A defensive security tool that adds imperceptible perturbations to images to protect artwork from unauthorized AI model training.",
       "technologies": ["Python", "Image Processing"],
       "link": "https://github.com/icantdo/Adversarial-Art-Protection",
-      "image": "project8.jpg"
+      "image": "project8.jpg",
+      "status": "current work"
     },
     {
       "title": "Weapon & Passive System - Complete Roguelike Framework",
       "description": "A production-ready, flexible weapon and passive item system for Unity, perfect for creating Vampire Survivors-like",
       "technologies": ["C#", "Unity"],
       "link": "https://mamkafa9.itch.io/weapon-passive-system-complete-roguelike-framework",
-      "image": "project9.jpg"
+      "image": "project9.jpg",
+      "status": "current work"
     },
     {
       "title": "2D Enemy AI System",
       "description": "Complete 2D enemy AI with A* pathfinding, FOV detection, patrol behaviors. Includes Guards, Dogs, Cameras & Motion Sensors. Fully documented & extensible.",
       "technologies": ["C#", "Unity"],
       "link": "https://mamkafa9.itch.io/2d-enemy-ai-system",
-      "image": "project10.jpg"
+      "image": "project10.jpg",
+      "status": "current work"
     }
   ],
 
