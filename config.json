@@ -94,14 +94,7 @@
       "technologies": ["C#", "Unity"],
       "link": "https://mamkafa9.itch.io/weapon-passive-system-complete-roguelike-framework",
       "image": "project9.jpg"
-    }, 
-    {
-      "title": "2D Enemy AI System",
-      "description": "Complete 2D enemy AI with A* pathfinding, FOV detection, patrol behaviors. Includes Guards, Dogs, Cameras & Motion Sensors. Fully documented & extensible.",
-      "technologies": ["C#", "Unity"],
-      "link": "https://mamkafa9.itch.io/2d-enemy-ai-system",
-      "image": "project10.jpg" 
-    } 
+    }
   ],
 
   "achievements": [
