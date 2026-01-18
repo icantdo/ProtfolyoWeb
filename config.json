@@ -117,7 +117,7 @@
       "description": "Real-time dynamic dialogue system integrating LLMs within Unity. Features context-aware conversations, custom async API handling to prevent main-thread freezing, and dynamic persona injection (System Prompts). Replaces static dialogue trees with generative interaction.",
       "technologies": ["Unity", "C#", "OpenAI API", "JSON", "Async/Await"],
       "link": "https://github.com/icantdo/Unity-NPC-System",
-      "image": "project_npc.jpg",
+      "image": "project11.jpg",
       "status": "finished"
     },
     {
@@ -125,7 +125,7 @@
       "description": "Hybrid procedural generation tool for D&D. Combines a Python-based logic layer for mathematical game balance (scaling stats, rarity curves) with a Generative AI layer for creating unique lore and flavor text. Includes advanced 'Risk/Reward' and 'Curse' mechanics.",
       "technologies": ["Python", "Streamlit", "Game Math", "Gemini API", "System Design"],
       "link": "https://dndtools-bvitfpaksrewgr8vuankpr.streamlit.app/",
-      "image": "project_loot.jpg",
+      "image": "project12.jpg",
       "status": "finished"
     },
     {
@@ -133,7 +133,7 @@
       "description": "Productivity tool that processes long-form YouTube content. Utilizes NLP to extract transcripts and generate instant summaries, key takeaways, and a Q&A chat interface for querying specific video details without watching the entire content.",
       "technologies": ["Python", "Streamlit", "YouTube API", "NLP", "LLM Integration"],
       "link": "https://videosummarizer-8jbr3upk5nycvzyvuseqjt.streamlit.app/",
-      "image": "project_video.jpg",
+      "image": "project13.jpg",
       "status": "finished"
     }
   ],
