@@ -28,7 +28,8 @@
     {"name": "Pandas", "level": 65},
     {"name": "Git", "level": 70},
     {"name": "GitHub", "level": 70},
-    {"name": "Machine Learning Integration in Games", "level": 60}
+    {"name": "Machine Learning Integration in Games", "level": 60},
+    {"name": "ROS", "level": 50}
   ],
 
   "projects": [
